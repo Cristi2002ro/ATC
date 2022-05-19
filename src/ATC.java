@@ -27,7 +27,7 @@ public class ATC extends Thread {
                 System.out.println("ATC: The plane "+current.plane_number+" landed on the runway");
                 runway=false;
                 try {
-                    sleep(2000);
+                    sleep(4000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }

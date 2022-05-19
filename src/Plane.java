@@ -11,46 +11,46 @@ public class Plane extends Thread {
     void disembark(){
         //passengers:
         System.out.println("Plane "+plane_number+": passengers disembarking...");
-        /*
+
         for(int i=1;i<=nrOfPassengers;i++){
 
             new Passenger(i,false,plane_number);
             try {
-                sleep(200);
+                sleep(50);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
 
         try {
-            sleep(800);
+            sleep(300);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         System.out.println("--------------------------------------------\nPlane "+plane_number+": all passengers disembarked");
-        */
+
     }
 
     void embark(){
         //passengers:
         System.out.println("Plane "+plane_number+": passengers embarking...");
-        /*
+
         for(int i=1;i<=nrOfPassengers;i++){
             new Passenger(i,true,plane_number);
             try {
-                sleep(200);
+                sleep(50);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         }
 
         try {
-            sleep(800);
+            sleep(300);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         System.out.println("--------------------------------------------\nPlane "+plane_number+": all passengers embarked");
-        */
+
     }
 
     public void request(){
